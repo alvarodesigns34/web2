@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alvarodesigns34.github.io/web2/sitemap.xml
