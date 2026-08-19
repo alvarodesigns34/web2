@@ -231,11 +231,16 @@ section{padding:112px 0;}
 @media(max-width:540px){.dishes{grid-template-columns:1fr;}}
 .dish-card{border-radius:16px;overflow:hidden;border:1px solid var(--color-border);background:var(--color-bg);display:flex;flex-direction:column;transition:transform var(--dur-base) var(--ease-std),box-shadow var(--dur-base) var(--ease-std);}
 .dish-card:hover{transform:translateY(-4px);box-shadow:0 20px 34px -18px rgba(39,26,17,.28);}
-.dish-card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--color-surface);}
+.dish-card .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--color-surface);}
 .dish-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform var(--dur-slow) var(--ease-std);}
 .dish-card:hover .ph img{transform:scale(1.05);}
-.dish-card.no-photo .ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--color-surface),var(--color-bg));}
-.dish-card.no-photo .ph span{font-family:"Fraunces",serif;font-style:italic;color:var(--color-muted);font-size:.85rem;}
+.illus-badge{
+  position:absolute;top:10px;left:10px;z-index:2;
+  background:rgba(35,23,16,.78);backdrop-filter:blur(4px);
+  color:var(--color-text-inv);font-size:.7rem;font-weight:700;
+  letter-spacing:.03em;padding:5px 10px;border-radius:6px;
+}
+.illus-note{margin-top:18px;font-size:.82rem;color:var(--color-muted);font-style:italic;}
 .dish-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1;}
 .dish-body h3{font-size:1.05rem;line-height:1.25;}
 .dish-body .note{font-size:.82rem;color:var(--color-muted);}
@@ -459,16 +464,22 @@ footer{background:var(--color-surface-dark);color:var(--color-text-inv);border-t
           <p class="price num">16 €</p>
         </div>
       </div>
-      <div class="dish-card no-photo reveal">
-        <div class="ph"><span>Solomillo Don Chema</span></div>
+      <div class="dish-card reveal">
+        <div class="ph">
+          <span class="illus-badge">Foto ilustrativa</span>
+          <img src="img/solomillo-ilustrativo.jpg" width="800" height="600" alt="Solomillo a la brasa con mantequilla de hierbas — foto ilustrativa, no tomada en el Mesón Don Chema" loading="lazy">
+        </div>
         <div class="dish-body">
           <h3>Solomillo de ciervo o jabalí a la brasa al tomillo</h3>
           <p class="note">A la brasa, al tomillo</p>
           <p class="price num">25 €</p>
         </div>
       </div>
-      <div class="dish-card no-photo reveal">
-        <div class="ph"><span>Trucha de la sierra</span></div>
+      <div class="dish-card reveal">
+        <div class="ph">
+          <span class="illus-badge">Foto ilustrativa</span>
+          <img src="img/trucha-ilustrativa.jpg" width="840" height="560" alt="Trucha a la plancha con limón y eneldo — foto ilustrativa, no tomada en el Mesón Don Chema" loading="lazy">
+        </div>
         <div class="dish-body">
           <h3>Trucha de la sierra al estilo serrano</h3>
           <p class="note">De los ríos de la sierra</p>
@@ -476,6 +487,7 @@ footer{background:var(--color-surface-dark);color:var(--color-text-inv);border-t
         </div>
       </div>
     </div>
+    <p class="illus-note reveal">Las fotos de solomillo y trucha son ilustrativas (no tomadas en el Mesón Don Chema) hasta tener fotografía propia de esos platos.</p>
   </div>
 </section>
 
