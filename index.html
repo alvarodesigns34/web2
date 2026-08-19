@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mesón Don Chema — Cazorla, Jaén · Carta y reservas</title>
-<meta name="description" content="Mesón Don Chema. Escaleras del Mercado, 2, Cazorla (Jaén). Carta, precios y horarios. Abre de 13:00 a 17:00, cierra los jueves. Reservas: 953 71 05 29.">
+<meta name="description" content="Mesón Don Chema. Escaleras del Mercado, 2, Cazorla (Jaén). Carta con precios, horarios y reservas al 953 71 05 29. Abre de 13:00 a 17:00; jueves cerrado.">
 <link rel="canonical" href="https://alvarodesigns34.github.io/web2/">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#14100B">
 
 <meta property="og:type" content="restaurant.restaurant">
 <meta property="og:title" content="Mesón Don Chema — Cazorla, Jaén">
-<meta property="og:description" content="Escaleras del Mercado, 2, Cazorla. Carta, precios y horarios. Reservas: 953 71 05 29.">
+<meta property="og:description" content="Escaleras del Mercado, 2, Cazorla. Carta con precios, horarios y reservas al 953 71 05 29.">
 <meta property="og:image" content="https://alvarodesigns34.github.io/web2/img/interior-comedor.jpg">
 <meta property="og:url" content="https://alvarodesigns34.github.io/web2/">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mesón Don Chema — Cazorla, Jaén">
-<meta name="twitter:description" content="Escaleras del Mercado, 2, Cazorla. Carta, precios y horarios. Reservas: 953 71 05 29.">
+<meta name="twitter:description" content="Escaleras del Mercado, 2, Cazorla. Carta con precios, horarios y reservas al 953 71 05 29.">
 <meta name="twitter:image" content="https://alvarodesigns34.github.io/web2/img/interior-comedor.jpg">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23E5B33A'/%3E%3Ctext x='32' y='45' font-size='34' font-family='Georgia,serif' font-weight='700' fill='%237A1D22' text-anchor='middle'%3EDC%3C/text%3E%3C/svg%3E">
@@ -55,13 +55,11 @@
 
 <style>
 :root{
-  /* Extraídos del rótulo y del comedor del propio mesón */
-  --ink:#14100B;          /* madera oscura */
+  --ink:#14100B;
   --ink-2:#241B12;
   --paper:#F2EDE3;
-  --paper-2:#E7DFCE;
-  --amarillo:#E5B33A;     /* el amarillo del rótulo */
-  --granate:#7A1D22;      /* el granate de los manteles */
+  --amarillo:#E5B33A;
+  --granate:#7A1D22;
   --gris:#75654F;
   --gris-inv:#A2947E;
   --linea:rgba(20,16,11,.16);
@@ -70,256 +68,196 @@
 *,*::before,*::after{box-sizing:border-box;}
 body{
   margin:0;background:var(--paper);color:var(--ink);
-  font-family:"Archivo",system-ui,sans-serif;font-size:1rem;line-height:1.55;
+  font-family:"Archivo",system-ui,sans-serif;font-size:1rem;line-height:1.5;
   -webkit-font-smoothing:antialiased;
 }
 img{max-width:100%;display:block;}
 a{color:inherit;}
-h1,h2,h3{margin:0;font-weight:400;}
+h1,h2,h3,p{margin:0;font-weight:inherit;}
+h1,h2,h3{font-weight:400;}
 figure{margin:0;}
 .serif{font-family:"Bodoni Moda",Georgia,serif;}
 .num{font-variant-numeric:tabular-nums;}
-.wrap{max-width:1240px;margin:0 auto;padding:0 32px;}
+.wrap{max-width:1280px;margin:0 auto;padding:0 34px;}
 @media(max-width:700px){.wrap{padding:0 20px;}}
-
-.label{
-  font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--gris);
-}
-.label-amarillo{color:var(--amarillo);}
-
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
 a:focus-visible,button:focus-visible{outline:2px solid var(--amarillo);outline-offset:3px;}
 .skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--amarillo);color:var(--ink);padding:12px 18px;font-weight:700;text-decoration:none;}
 .skip:focus{top:16px;}
 
-/* ───── Barra superior ───── */
-.top{
-  position:sticky;top:0;z-index:60;background:var(--ink);color:var(--paper);
-  border-bottom:1px solid var(--linea-inv);
-}
-.top-in{display:flex;align-items:center;justify-content:space-between;height:60px;gap:24px;}
-.top-name{font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;white-space:nowrap;}
-.top-nav{display:flex;gap:26px;}
-.top-nav a{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--gris-inv);}
-.top-nav a:hover{color:var(--amarillo);}
-.top-tel{
-  font-size:.85rem;font-weight:700;text-decoration:none;letter-spacing:.04em;
-  border-bottom:2px solid var(--amarillo);padding-bottom:2px;white-space:nowrap;
-}
-.burger{display:none;background:none;border:0;padding:6px;cursor:pointer;}
-.burger i{display:block;width:22px;height:2px;background:var(--paper);margin:5px 0;}
-@media(max-width:880px){ .top-nav{display:none;} .burger{display:block;} }
-@media(max-width:420px){ .top-tel{display:none;} }
-.drawer{display:none;background:var(--ink-2);color:var(--paper);}
-.drawer.on{display:block;}
-.drawer a{display:block;padding:15px 32px;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--linea-inv);}
-@media(max-width:700px){.drawer a{padding:15px 20px;}}
+.rubro{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gris);}
+.rubro-inv{color:var(--gris-inv);}
 
-/* ───── Portada ───── */
-.portada{background:var(--ink);color:var(--paper);position:relative;}
-.portada-img{position:relative;}
-.portada-img img{width:100%;height:min(74vh,660px);object-fit:cover;object-position:center 42%;opacity:.62;}
-.portada-img::after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(20,16,11,.72) 0%,rgba(20,16,11,.15) 42%,rgba(20,16,11,.94) 100%);
-}
-.portada-txt{
-  position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;
-  padding-bottom:44px;
-}
-.portada-txt .wrap{width:100%;}
-.portada h1{
-  font-family:"Bodoni Moda",Georgia,serif;
-  font-size:clamp(3rem,11vw,8.4rem);line-height:.86;letter-spacing:-.02em;
-  font-weight:500;text-transform:uppercase;
-}
-.portada h1 .l2{display:block;color:var(--amarillo);}
-.portada-sub{
-  margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:baseline;
-  font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
-}
-.portada-sub .sep{color:var(--amarillo);}
-.portada-cta{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap;}
 .btn{
-  display:inline-block;padding:14px 26px;text-decoration:none;
-  font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  display:inline-block;padding:15px 28px;text-decoration:none;
+  font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   border:1px solid transparent;transition:background .16s,color .16s,border-color .16s;
 }
-.btn-a{background:var(--amarillo);color:var(--ink);}
-.btn-a:hover{background:var(--paper);}
-.btn-b{border-color:rgba(242,237,227,.4);color:var(--paper);}
-.btn-b:hover{border-color:var(--amarillo);color:var(--amarillo);}
-.btn-dark{background:var(--ink);color:var(--paper);}
-.btn-dark:hover{background:var(--granate);}
-.btn-line{border-color:var(--linea);color:var(--ink);}
-.btn-line:hover{border-color:var(--ink);}
+.btn-am{background:var(--amarillo);color:var(--ink);}
+.btn-am:hover{background:var(--paper);}
+.btn-cl{border-color:rgba(242,237,227,.45);color:var(--paper);}
+.btn-cl:hover{border-color:var(--amarillo);color:var(--amarillo);}
+.btn-ink{background:var(--ink);color:var(--paper);}
+.btn-ink:hover{background:var(--granate);}
+.btn-ln{border-color:var(--linea);color:var(--ink);}
+.btn-ln:hover{border-color:var(--ink);}
+.btn-sm{padding:10px 18px;font-size:.72rem;}
 
-/* ───── Franja de datos ───── */
-.datos{background:var(--amarillo);color:var(--ink);}
-.datos-in{display:grid;grid-template-columns:repeat(4,1fr);}
-.datos-in > div{padding:22px 0;border-right:1px solid rgba(20,16,11,.22);padding-right:20px;}
-.datos-in > div:last-child{border-right:0;}
-.datos b{display:block;font-family:"Bodoni Moda",serif;font-size:1.5rem;font-weight:500;line-height:1.1;}
-.datos span{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-top:5px;opacity:.72;}
+/* ── Navbar ── */
+.top{position:sticky;top:0;z-index:60;background:var(--ink);color:var(--paper);border-bottom:1px solid var(--linea-inv);}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:62px;gap:24px;}
+.top-n{font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;white-space:nowrap;}
+.top-nav{display:flex;gap:30px;}
+.top-nav a{font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--gris-inv);}
+.top-nav a:hover{color:var(--amarillo);}
+.burger{display:none;background:none;border:0;padding:6px;cursor:pointer;}
+.burger i{display:block;width:22px;height:2px;background:var(--paper);margin:5px 0;}
+@media(max-width:880px){.top-nav{display:none;}.burger{display:block;}}
+@media(max-width:520px){.top .btn{display:none;}}
+.drawer{display:none;background:var(--ink-2);}
+.drawer.on{display:block;}
+.drawer a{display:block;padding:16px 34px;text-decoration:none;color:var(--paper);font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--linea-inv);}
+@media(max-width:700px){.drawer a{padding:16px 20px;}}
+
+/* ── Hero ── */
+.hero{position:relative;background:var(--ink);color:var(--paper);}
+.hero img{width:100%;height:min(86vh,780px);object-fit:cover;object-position:center 44%;opacity:.66;}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,11,.7) 0%,rgba(20,16,11,.1) 38%,rgba(20,16,11,.96) 100%);}
+.hero-txt{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;}
+.hero-txt .wrap{width:100%;}
+.hero h1{font-family:"Bodoni Moda",Georgia,serif;font-size:clamp(3.1rem,11.5vw,9rem);line-height:.84;letter-spacing:-.025em;font-weight:500;text-transform:uppercase;}
+.hero h1 span{display:block;color:var(--amarillo);}
+.hero-lugar{margin-top:20px;font-size:.82rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;}
+.hero-cta{margin-top:28px;display:flex;gap:13px;flex-wrap:wrap;}
+.rail{margin-top:38px;border-top:1px solid var(--linea-inv);display:flex;flex-wrap:wrap;gap:0 46px;padding:16px 0 30px;}
+.rail div{display:flex;align-items:baseline;gap:9px;padding:4px 0;}
+.rail b{font-family:"Bodoni Moda",serif;font-size:1.3rem;font-weight:500;color:var(--amarillo);}
+.rail span{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gris-inv);}
+
+/* ── Carta ── */
+.carta{padding:104px 0 0;}
+@media(max-width:700px){.carta{padding:68px 0 0;}}
+.carta-cab{display:flex;align-items:flex-end;justify-content:space-between;gap:26px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:16px;}
+.carta-cab h2{font-family:"Bodoni Moda",serif;font-size:clamp(2.8rem,8vw,5.6rem);line-height:.86;text-transform:uppercase;font-weight:500;}
+.carta-cab p{margin:0 0 6px;font-size:.78rem;color:var(--gris);max-width:32ch;}
+.cols{columns:2;column-gap:80px;margin-top:56px;}
+@media(max-width:860px){.cols{columns:1;}}
+.grupo{break-inside:avoid;margin-bottom:48px;}
+.grupo h3{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--granate);padding-bottom:9px;border-bottom:1px solid var(--ink);margin-bottom:2px;}
+.it{display:flex;align-items:baseline;gap:7px;padding:12px 0;border-bottom:1px solid var(--linea);}
+.it:last-child{border-bottom:0;}
+.it .n{font-size:.96rem;font-weight:500;}
+.it .n i{display:block;font-style:normal;font-size:.77rem;color:var(--gris);margin-top:2px;line-height:1.35;}
+.it .g{flex:1;border-bottom:1px dotted var(--linea);transform:translateY(-4px);min-width:12px;}
+@media(max-width:700px){.it .g{border-bottom:0;}}
+.it .p{font-family:"Bodoni Moda",serif;font-size:1.16rem;font-weight:500;white-space:nowrap;}
+.grupos-menu{border-top:2px solid var(--ink);padding-top:22px;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start;}
+.grupos-menu p{margin:0;font-size:.82rem;color:var(--gris);max-width:48ch;}
+.grupos-menu b{display:block;font-family:"Bodoni Moda",serif;font-size:2.6rem;font-weight:500;line-height:1;text-align:right;}
+.grupos-menu b span{display:block;font-family:"Archivo",sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);margin-top:6px;}
+@media(max-width:600px){.grupos-menu b,.grupos-menu b span{text-align:left;}}
+
+/* ── Especialidades ── */
+.esp{background:var(--ink);color:var(--paper);margin-top:104px;padding:0 0 8px;}
+@media(max-width:700px){.esp{margin-top:68px;}}
+.esp-cab{padding-top:64px;padding-bottom:40px;}
+.esp-cab h2{font-family:"Bodoni Moda",serif;font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;line-height:.9;margin-top:12px;}
+.banda{display:grid;grid-template-columns:1.5fr 1fr;align-items:stretch;border-top:1px solid var(--linea-inv);}
+.banda:nth-child(even){grid-template-columns:1fr 1.5fr;}
+.banda:last-of-type{border-bottom:1px solid var(--linea-inv);}
+.banda .ph{position:relative;overflow:hidden;min-height:clamp(280px,32vw,430px);}
+.banda .ph img{width:100%;height:100%;object-fit:cover;}
+.banda .tx{display:flex;flex-direction:column;justify-content:center;padding:44px 0 44px 60px;}
+.banda:nth-child(even) .ph{order:2;}
+.banda:nth-child(even) .tx{order:1;padding:44px 60px 44px 0;align-items:flex-end;text-align:right;}
 @media(max-width:860px){
-  .datos-in{grid-template-columns:1fr 1fr;}
-  .datos-in > div:nth-child(2){border-right:0;}
-  .datos-in > div:nth-child(1),.datos-in > div:nth-child(2){border-bottom:1px solid rgba(20,16,11,.22);}
+  .banda,.banda:nth-child(even){grid-template-columns:1fr;}
+  .banda .ph,.banda .tx,.banda:nth-child(even) .ph,.banda:nth-child(even) .tx{order:initial;}
+  .banda .ph{min-height:0;aspect-ratio:16/10;}
+  .banda .tx,.banda:nth-child(even) .tx{padding:28px 20px 40px;align-items:flex-start;text-align:left;}
 }
+.banda .prod{font-family:"Bodoni Moda",serif;font-size:clamp(2.6rem,6.4vw,5.2rem);line-height:.88;text-transform:uppercase;color:var(--amarillo);font-weight:500;}
+.banda .plato{margin:18px 0 0;font-size:1.02rem;max-width:34ch;}
+.banda .plato i{display:block;font-style:normal;font-size:.8rem;color:var(--gris-inv);margin-top:5px;}
+.banda .precio{margin-top:16px;font-family:"Bodoni Moda",serif;font-size:1.7rem;}
+.ilus{position:absolute;top:14px;left:14px;z-index:2;background:rgba(20,16,11,.84);color:var(--paper);font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;}
+.esp-pie{padding-top:22px;padding-bottom:40px;font-size:.72rem;color:var(--gris-inv);}
 
-/* ───── Rótulo ───── */
-.rotulo{background:var(--ink);color:var(--paper);}
-.rotulo-in{
-  display:grid;grid-template-columns:.52fr 1fr;align-items:stretch;
-  height:clamp(400px,44vw,560px);
-}
-@media(max-width:860px){.rotulo-in{grid-template-columns:1fr;height:auto;}}
-.rotulo-foto{overflow:hidden;}
-.rotulo-foto img{width:100%;height:100%;object-fit:cover;object-position:center 30%;}
-@media(max-width:860px){.rotulo-foto img{height:auto;aspect-ratio:16/11;object-position:center 24%;}}
-.rotulo-txt{padding:0 0 0 64px;display:flex;flex-direction:column;justify-content:center;}
-@media(max-width:860px){.rotulo-txt{padding:44px 20px 52px;}}
-@media(max-width:1240px) and (min-width:861px){.rotulo-txt{padding-right:32px;}}
-.rotulo-cita{
-  font-family:"Bodoni Moda",serif;font-size:clamp(1.7rem,3.4vw,3rem);line-height:1.12;
-  font-weight:400;margin:20px 0 0;
-}
-.rotulo-cita em{font-style:normal;color:var(--amarillo);}
-.rotulo-pie{margin-top:22px;font-size:.85rem;color:var(--gris-inv);max-width:38ch;}
-.productos{margin-top:38px;display:flex;flex-wrap:wrap;gap:10px 0;border-top:1px solid var(--linea-inv);padding-top:22px;}
-.productos span{
-  font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  padding-right:16px;margin-right:16px;border-right:1px solid var(--linea-inv);
-}
-.productos span:last-child{border-right:0;}
+/* ── El local ── */
+.local{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;}
+@media(max-width:860px){.local{grid-template-columns:1fr;}}
+.local-ph{overflow:hidden;min-height:clamp(360px,46vw,600px);}
+@media(max-width:860px){.local-ph{min-height:0;aspect-ratio:16/11;}}
+.local-ph img{width:100%;height:100%;object-fit:cover;object-position:center 28%;}
+.local-tx{display:flex;flex-direction:column;justify-content:center;padding:56px 0 56px 64px;}
+@media(max-width:860px){.local-tx{padding:44px 20px 52px;}}
+.local-tx h2{font-family:"Bodoni Moda",serif;font-size:clamp(2rem,4.4vw,3.2rem);text-transform:uppercase;line-height:.92;margin-top:12px;}
+.local-dir{font-family:"Bodoni Moda",serif;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.2;margin:26px 0 0;}
+.local-dir span{display:block;font-family:"Archivo",sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);margin-top:10px;}
 
-/* ───── Carta ───── */
-.carta{padding:96px 0 40px;}
-@media(max-width:700px){.carta{padding:64px 0 32px;}}
-.carta-cab{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:18px;}
-.carta-cab h2{font-family:"Bodoni Moda",serif;font-size:clamp(2.6rem,7vw,5rem);line-height:.9;text-transform:uppercase;font-weight:500;}
-.carta-cab p{margin:0;font-size:.8rem;color:var(--gris);max-width:34ch;}
-.carta-cols{columns:2;column-gap:76px;margin-top:52px;}
-@media(max-width:860px){.carta-cols{columns:1;}}
-.bloque{break-inside:avoid;margin-bottom:46px;}
-.bloque h3{
-  font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--granate);padding-bottom:9px;border-bottom:1px solid var(--ink);margin-bottom:4px;
-}
-.plato{display:flex;align-items:baseline;gap:6px;padding:11px 0;border-bottom:1px solid var(--linea);}
-.plato:last-child{border-bottom:0;}
-.plato .n{font-size:.95rem;font-weight:500;}
-.plato .n i{display:block;font-style:normal;font-size:.78rem;color:var(--gris);margin-top:2px;line-height:1.35;}
-.plato .puntos{flex:1;border-bottom:1px dotted var(--linea);transform:translateY(-4px);min-width:14px;}
-.plato .p{font-family:"Bodoni Moda",serif;font-size:1.15rem;font-weight:500;white-space:nowrap;}
-@media(max-width:700px){.plato .puntos{border-bottom:0;}}
-.carta-nota{
-  margin-top:8px;border-top:2px solid var(--ink);padding-top:20px;
-  display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start;
-}
-.carta-nota p{margin:0;font-size:.82rem;color:var(--gris);max-width:46ch;}
-.carta-nota .menu-g{text-align:right;}
-.carta-nota .menu-g b{display:block;font-family:"Bodoni Moda",serif;font-size:2.4rem;font-weight:500;line-height:1;}
-.carta-nota .menu-g span{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);}
-@media(max-width:600px){.carta-nota .menu-g{text-align:left;}}
+/* ── Reseñas ── */
+.res{background:var(--ink);color:var(--paper);padding:104px 0;}
+@media(max-width:700px){.res{padding:68px 0;}}
+.res-cifras{display:flex;gap:64px;flex-wrap:wrap;align-items:flex-end;border-bottom:1px solid var(--linea-inv);padding-bottom:30px;}
+.res-cifras div b{display:block;font-family:"Bodoni Moda",serif;font-size:clamp(3.2rem,8vw,5.4rem);line-height:.85;color:var(--amarillo);font-weight:500;}
+.res-cifras div span{display:block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gris-inv);margin-top:12px;}
+.res-cit{margin-top:52px;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;}
+@media(max-width:860px){.res-cit{grid-template-columns:1fr;gap:34px;}}
+.cit-a{font-family:"Bodoni Moda",serif;font-size:clamp(1.55rem,3.1vw,2.5rem);line-height:1.2;margin:0;}
+.cit-b{margin:0;font-size:1rem;line-height:1.45;}
+.firma{margin:14px 0 0;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gris-inv);}
+.cit-b + .firma{margin-bottom:28px;}
 
-/* ───── Platos en foto ───── */
-.mosaico{
-  margin-top:88px;display:grid;gap:3px;background:var(--paper-2);
-  grid-template-columns:repeat(12,1fr);
-  grid-template-rows:clamp(280px,34vw,440px) clamp(220px,26vw,330px);
-}
-.mosaico .m1{grid-column:1/8;grid-row:1;}
-.mosaico .m2{grid-column:8/13;grid-row:1;}
-.mosaico .m3{grid-column:1/6;grid-row:2;}
-.mosaico .m4{grid-column:6/13;grid-row:2;}
-@media(max-width:820px){
-  .mosaico{grid-template-columns:1fr;grid-template-rows:none;}
-  .mosaico .m1,.mosaico .m2,.mosaico .m3,.mosaico .m4{grid-column:1;grid-row:auto;}
-  .mosaico .pieza{aspect-ratio:4/3;}
-}
-.pieza{position:relative;background:var(--ink);overflow:hidden;}
-.pieza img{width:100%;height:100%;object-fit:cover;display:block;}
-.pieza figcaption{
-  position:absolute;left:0;right:0;bottom:0;padding:26px 24px 20px;color:var(--paper);
-  background:linear-gradient(0deg,rgba(20,16,11,.9),rgba(20,16,11,0));
-  display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
-}
-.pieza figcaption .t{font-family:"Bodoni Moda",serif;font-size:1.2rem;line-height:1.15;}
-.pieza figcaption .t i{display:block;font-style:normal;font-family:"Archivo",sans-serif;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-inv);margin-top:6px;}
-.pieza figcaption .v{font-family:"Bodoni Moda",serif;font-size:1.5rem;color:var(--amarillo);white-space:nowrap;}
-.marca{
-  position:absolute;top:14px;left:14px;z-index:2;background:rgba(20,16,11,.82);color:var(--paper);
-  font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;
-}
-.pie-mosaico{margin-top:14px;font-size:.72rem;color:var(--gris);}
-
-/* ───── Reseñas ───── */
-.resenas{background:var(--ink);color:var(--paper);padding:96px 0;margin-top:96px;}
-@media(max-width:700px){.resenas{padding:64px 0;margin-top:64px;}}
-.res-top{display:flex;align-items:baseline;gap:40px;flex-wrap:wrap;border-bottom:1px solid var(--linea-inv);padding-bottom:28px;}
-.res-top .big{font-family:"Bodoni Moda",serif;font-size:clamp(3.4rem,9vw,6rem);line-height:.85;color:var(--amarillo);font-weight:500;}
-.res-top .meta{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gris-inv);line-height:1.9;}
-.res-lista{margin-top:44px;display:grid;grid-template-columns:1.25fr .75fr;gap:56px;}
-@media(max-width:860px){.res-lista{grid-template-columns:1fr;gap:34px;}}
-.res-1{font-family:"Bodoni Moda",serif;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.22;font-weight:400;margin:0;}
-.res-firma{margin-top:16px;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-inv);}
-.res-2{margin:0;font-size:1.02rem;line-height:1.5;}
-.res-2 + .res-firma{margin-bottom:26px;}
-
-/* ───── Ubicación ───── */
-.ubi{padding:96px 0;}
-@media(max-width:700px){.ubi{padding:64px 0;}}
-.ubi-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
-@media(max-width:900px){.ubi-grid{grid-template-columns:1fr;gap:40px;}}
-.dir{font-family:"Bodoni Moda",serif;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.08;margin:14px 0 0;}
-.dir-2{margin:10px 0 0;color:var(--gris);font-size:.95rem;}
-.copiar{
-  margin-top:16px;background:none;border:1px solid var(--linea);padding:9px 15px;cursor:pointer;
-  font-family:inherit;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);
-}
+/* ── Ubicación ── */
+.ubi{padding:104px 0;}
+@media(max-width:700px){.ubi{padding:68px 0;}}
+.ubi-g{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+@media(max-width:900px){.ubi-g{grid-template-columns:1fr;gap:40px;}}
+.ubi-dir{font-family:"Bodoni Moda",serif;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.08;margin:12px 0 0;}
+.ubi-dir span{display:block;font-family:"Archivo",sans-serif;font-size:.95rem;font-weight:400;color:var(--gris);margin-top:10px;letter-spacing:0;text-transform:none;}
+.copiar{margin-top:18px;background:none;border:1px solid var(--linea);padding:9px 15px;cursor:pointer;font-family:inherit;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);}
 .copiar:hover{border-color:var(--ink);color:var(--ink);}
-.horas{width:100%;border-collapse:collapse;margin-top:34px;}
-.horas th{text-align:left;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);padding-bottom:10px;border-bottom:1px solid var(--ink);}
-.horas th:last-child{text-align:right;}
+.horas{width:100%;border-collapse:collapse;margin-top:36px;}
+.horas th{text-align:left;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gris);padding-bottom:10px;border-bottom:1px solid var(--ink);}
+.horas th:last-child,.horas td:last-child{text-align:right;}
 .horas td{padding:9px 0;border-bottom:1px solid var(--linea);font-size:.93rem;}
-.horas td:last-child{text-align:right;}
 .horas tr.off td{color:var(--gris);}
-.horas tr.off td:last-child{color:var(--granate);font-weight:600;}
-.coche{margin-top:30px;padding-top:20px;border-top:1px solid var(--linea);}
-.coche p{margin:8px 0 0;font-size:.88rem;color:var(--gris);max-width:44ch;}
+.horas tr.off td:last-child{color:var(--granate);font-weight:700;}
+.coche{margin-top:32px;padding-top:20px;border-top:1px solid var(--linea);}
+.coche p{margin:9px 0 0;font-size:.86rem;color:var(--gris);max-width:44ch;}
 .ubi-acc{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;}
 .mapa{border:1px solid var(--linea);}
-.mapa iframe{display:block;width:100%;height:420px;border:0;}
+.mapa iframe{display:block;width:100%;height:460px;border:0;}
 @media(max-width:900px){.mapa iframe{height:300px;}}
 
-/* ───── Pie ───── */
+/* ── Reserva ── */
+.reserva{background:var(--amarillo);color:var(--ink);padding:64px 0;}
+.reserva-in{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap;}
+.reserva .tel{font-family:"Bodoni Moda",serif;font-size:clamp(2.6rem,7.5vw,5rem);line-height:.9;text-decoration:none;display:block;margin-top:10px;}
+.reserva .tel:hover{color:var(--granate);}
+.reserva .rubro{color:rgba(20,16,11,.66);}
+
+/* ── Footer ── */
 footer{background:var(--ink);color:var(--paper);}
-.pie{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding:72px 0 44px;}
-@media(max-width:760px){.pie{grid-template-columns:1fr;gap:34px;padding:56px 0 32px;}}
+.pie{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding:76px 0 44px;}
+@media(max-width:860px){.pie{grid-template-columns:1fr 1fr;gap:34px;}}
+@media(max-width:560px){.pie{grid-template-columns:1fr;padding:56px 0 32px;}}
 .pie-n{font-family:"Bodoni Moda",serif;font-size:1.9rem;text-transform:uppercase;line-height:1;}
 .pie-n em{font-style:normal;color:var(--amarillo);}
-.pie h4{margin:0 0 14px;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gris-inv);}
+.pie h3{font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gris-inv);margin-bottom:14px;}
 .pie a,.pie p{display:block;margin:0 0 9px;font-size:.92rem;text-decoration:none;}
 .pie a:hover{color:var(--amarillo);}
-.pie-bajo{border-top:1px solid var(--linea-inv);padding:22px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.74rem;color:var(--gris-inv);}
+.pie-b{border-top:1px solid var(--linea-inv);padding:22px 0;font-size:.72rem;color:var(--gris-inv);}
 
-/* ───── Barra móvil ───── */
+/* ── Barra móvil ── */
 .movil{display:none;}
 @media(max-width:640px){
-  body{padding-bottom:70px;}
-  .movil{
-    display:grid;grid-template-columns:1fr 1.3fr;position:fixed;left:0;right:0;bottom:0;z-index:70;
-    border-top:1px solid var(--linea-inv);
-  }
-  .movil a{
-    padding:16px 8px calc(16px + env(safe-area-inset-bottom));text-align:center;text-decoration:none;
-    font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  }
-  .movil .m1{background:var(--ink);color:var(--paper);}
-  .movil .m2{background:var(--amarillo);color:var(--ink);}
+  body{padding-bottom:68px;}
+  .movil{display:grid;grid-template-columns:1fr 1.35fr;position:fixed;left:0;right:0;bottom:0;z-index:70;border-top:1px solid var(--linea-inv);}
+  .movil a{padding:16px 8px calc(16px + env(safe-area-inset-bottom));text-align:center;text-decoration:none;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;}
+  .movil .a1{background:var(--ink);color:var(--paper);}
+  .movil .a2{background:var(--amarillo);color:var(--ink);}
 }
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
 </style>
 </head>
 <body>
@@ -328,71 +266,39 @@ footer{background:var(--ink);color:var(--paper);}
 
 <div class="top">
   <div class="wrap top-in">
-    <a href="#" class="top-name">Mesón Don Chema</a>
+    <a href="#" class="top-n">Mesón Don Chema</a>
     <nav class="top-nav" aria-label="Principal">
       <a href="#carta">Carta</a>
       <a href="#local">El local</a>
-      <a href="#opiniones">Opiniones</a>
-      <a href="#ubicacion">Dónde estamos</a>
+      <a href="#ubicacion">Cómo llegar</a>
     </nav>
-    <a class="top-tel num" href="tel:+34953710529">953 71 05 29</a>
+    <a class="btn btn-am btn-sm" href="tel:+34953710529">Reservar</a>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
   </div>
   <div class="drawer" id="drawer">
     <a href="#carta">Carta</a>
     <a href="#local">El local</a>
-    <a href="#opiniones">Opiniones</a>
-    <a href="#ubicacion">Dónde estamos</a>
-    <a href="tel:+34953710529">Llamar · 953 71 05 29</a>
+    <a href="#ubicacion">Cómo llegar</a>
+    <a href="tel:+34953710529">Reservar · 953 71 05 29</a>
   </div>
 </div>
 
 <main id="main">
 
-<section class="portada">
-  <div class="portada-img">
-    <img src="img/interior-comedor.jpg" width="750" height="500" alt="Comedor del Mesón Don Chema, con mesas vestidas de amarillo y granate y suelo de barro" fetchpriority="high">
-  </div>
-  <div class="portada-txt">
+<section class="hero">
+  <img src="img/interior-comedor.jpg" width="750" height="500" alt="Comedor del Mesón Don Chema, con mesas vestidas de amarillo y granate" fetchpriority="high">
+  <div class="hero-txt">
     <div class="wrap">
-      <h1 class="serif">Mesón<span class="l2">Don Chema</span></h1>
-      <div class="portada-sub">
-        <span>Escaleras del Mercado, 2</span>
-        <span class="sep">·</span>
-        <span>Cazorla, Jaén</span>
+      <h1 class="serif">Mesón <span>Don Chema</span></h1>
+      <p class="hero-lugar">Cazorla · Jaén</p>
+      <div class="hero-cta">
+        <a class="btn btn-am" href="tel:+34953710529">Reservar mesa</a>
+        <a class="btn btn-cl" href="#carta">Ver carta</a>
       </div>
-      <div class="portada-cta">
-        <a class="btn btn-a" href="tel:+34953710529">Reservar · 953 71 05 29</a>
-        <a class="btn btn-b" href="#carta">Ver la carta</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="datos">
-  <div class="wrap datos-in">
-    <div><b class="num">4,6</b><span>Google · 2.669 reseñas</span></div>
-    <div><b class="num">13:00–17:00</b><span>Todos los días</span></div>
-    <div><b>Jueves</b><span>Cerrado</span></div>
-    <div><b class="num">25 €</b><span>Menú para grupos</span></div>
-  </div>
-</section>
-
-<section class="rotulo" id="local">
-  <div class="rotulo-in">
-    <div class="rotulo-foto">
-      <img src="img/fachada-noche.jpg" width="335" height="597" alt="Rótulo amarillo del Restaurante Mesón Don Chema sobre la calle, con el alumbrado de Navidad de Cazorla al fondo" loading="lazy">
-    </div>
-    <div class="rotulo-txt">
-      <span class="label label-amarillo">Lo que pone en el rótulo</span>
-      <p class="rotulo-cita">Especialidad en carnes de monte.<br><em>Cocina tradicional.</em></p>
-      <p class="rotulo-pie">Se entra por las escaleras que bajan del mercado, en la calle peatonal.</p>
-      <div class="productos">
-        <span>Ciervo</span>
-        <span>Jabalí</span>
-        <span>Gamo</span>
-        <span>Perdiz roja</span>
-        <span>Trucha</span>
+      <div class="rail">
+        <div><b class="num">4,6</b><span>Google · 2.669 reseñas</span></div>
+        <div><b class="num">13:00–17:00</b><span>Jueves cerrado</span></div>
+        <div><b class="num">953 71 05 29</b><span>Reservas</span></div>
       </div>
     </div>
   </div>
@@ -402,123 +308,165 @@ footer{background:var(--ink);color:var(--paper);}
   <div class="wrap">
     <div class="carta-cab">
       <h2 class="serif">Carta</h2>
-      <p>Precios con IVA incluido. Servicio de pan y degustación de AOVE, 1 € por persona. Consulte las medias raciones.</p>
+      <p>IVA incluido. Pan y degustación de AOVE, 1 € por persona. Consulte las medias raciones.</p>
     </div>
 
-    <div class="carta-cols">
-
-      <div class="bloque">
+    <div class="cols">
+      <div class="grupo">
         <h3>Carnes del monte</h3>
-        <div class="plato"><span class="n">Solomillo de ciervo o jabalí a la brasa al tomillo</span><span class="puntos"></span><span class="p num">25 €</span></div>
-        <div class="plato"><span class="n">Lomo de ciervo en salsa cazadora y piñones</span><span class="puntos"></span><span class="p num">25 €</span></div>
-        <div class="plato"><span class="n">Chuletas de jabalí, gamo o ciervo a la brasa</span><span class="puntos"></span><span class="p num">24 €</span></div>
-        <div class="plato"><span class="n">Tacos de ciervo o jabalí en aceite virgen extra</span><span class="puntos"></span><span class="p num">22 €</span></div>
-        <div class="plato"><span class="n">Media perdiz roja escabechada</span><span class="puntos"></span><span class="p num">16 €</span></div>
-        <div class="plato"><span class="n">Judías con perdiz<i>Estofado tradicional</i></span><span class="puntos"></span><span class="p num">15 €</span></div>
+        <div class="it"><span class="n">Solomillo de ciervo o jabalí a la brasa al tomillo</span><span class="g"></span><span class="p num">25 €</span></div>
+        <div class="it"><span class="n">Lomo de ciervo en salsa cazadora y piñones</span><span class="g"></span><span class="p num">25 €</span></div>
+        <div class="it"><span class="n">Chuletas de jabalí, gamo o ciervo a la brasa</span><span class="g"></span><span class="p num">24 €</span></div>
+        <div class="it"><span class="n">Tacos de ciervo o jabalí en aceite virgen extra</span><span class="g"></span><span class="p num">22 €</span></div>
+        <div class="it"><span class="n">Media perdiz roja escabechada</span><span class="g"></span><span class="p num">16 €</span></div>
+        <div class="it"><span class="n">Judías con perdiz<i>Estofado tradicional</i></span><span class="g"></span><span class="p num">15 €</span></div>
       </div>
 
-      <div class="bloque">
-        <h3>Huevos con fundamento</h3>
-        <div class="plato"><span class="n">Huevos con lomo de orza, pisto casero y pimientos secos fritos</span><span class="puntos"></span><span class="p num">16 €</span></div>
-        <div class="plato"><span class="n">Huevos con jamón ibérico, patatas a lo pobre y pimientos</span><span class="puntos"></span><span class="p num">15 €</span></div>
-        <div class="plato"><span class="n">Revuelto serrano de huevo, habas, trigueros y jamón</span><span class="puntos"></span><span class="p num">15 €</span></div>
-        <div class="plato"><span class="n">Revuelto de setas, gambas y jamón</span><span class="puntos"></span><span class="p num">13 €</span></div>
-        <div class="plato"><span class="n">Huevos a la cazorleña<i>En cazuela de barro, con jamón, chorizo, verduras y patatas a lo pobre</i></span><span class="puntos"></span><span class="p num">12 €</span></div>
+      <div class="grupo">
+        <h3>Huevos</h3>
+        <div class="it"><span class="n">Huevos con lomo de orza, pisto casero y pimientos secos fritos</span><span class="g"></span><span class="p num">16 €</span></div>
+        <div class="it"><span class="n">Huevos con jamón ibérico, patatas a lo pobre y pimientos</span><span class="g"></span><span class="p num">15 €</span></div>
+        <div class="it"><span class="n">Revuelto serrano de huevo, habas, trigueros y jamón</span><span class="g"></span><span class="p num">15 €</span></div>
+        <div class="it"><span class="n">Revuelto de setas, gambas y jamón</span><span class="g"></span><span class="p num">13 €</span></div>
+        <div class="it"><span class="n">Huevos a la cazorleña<i>En cazuela de barro, con jamón, chorizo, verduras y patatas a lo pobre</i></span><span class="g"></span><span class="p num">12 €</span></div>
       </div>
 
-      <div class="bloque">
+      <div class="grupo">
         <h3>Ensaladas y sopas</h3>
-        <div class="plato"><span class="n">Ensalada de perdiz roja y naranja<i>Mezclum, confitura de tomate, piquillo, perdiz escabechada</i></span><span class="puntos"></span><span class="p num">16 €</span></div>
-        <div class="plato"><span class="n">Ensalada de pulpo<i>Rúcula, nueces, pulpo gallego, tomate cherry y queso fresco</i></span><span class="puntos"></span><span class="p num">16 €</span></div>
-        <div class="plato"><span class="n">Ensalada de anchoas y queso fresco a la hierbabuena</span><span class="puntos"></span><span class="p num">15 €</span></div>
-        <div class="plato"><span class="n">Salmorejo serrano con huevo, jamón y cebolla crujiente</span><span class="puntos"></span><span class="p num">7 €</span></div>
-        <div class="plato"><span class="n">Gazpacho andaluz tradicional<i>En temporada</i></span><span class="puntos"></span><span class="p num">7 €</span></div>
+        <div class="it"><span class="n">Ensalada de perdiz roja y naranja<i>Mezclum, confitura de tomate, piquillo, perdiz escabechada</i></span><span class="g"></span><span class="p num">16 €</span></div>
+        <div class="it"><span class="n">Ensalada de pulpo<i>Rúcula, nueces, pulpo gallego, tomate cherry y queso fresco</i></span><span class="g"></span><span class="p num">16 €</span></div>
+        <div class="it"><span class="n">Ensalada de anchoas y queso fresco a la hierbabuena</span><span class="g"></span><span class="p num">15 €</span></div>
+        <div class="it"><span class="n">Salmorejo serrano con huevo, jamón y cebolla crujiente</span><span class="g"></span><span class="p num">7 €</span></div>
+        <div class="it"><span class="n">Gazpacho andaluz tradicional<i>En temporada</i></span><span class="g"></span><span class="p num">7 €</span></div>
       </div>
 
-      <div class="bloque">
-        <h3>Pescados de río y mar</h3>
-        <div class="plato"><span class="n">Tartar de trucha con aliño de cítricos y salsa de soja</span><span class="puntos"></span><span class="p num">22 €</span></div>
-        <div class="plato"><span class="n">Bacalao confitado al ajillo</span><span class="puntos"></span><span class="p num">20 €</span></div>
-        <div class="plato"><span class="n">Trucha ahumada con bacon y patatas a lo pobre</span><span class="puntos"></span><span class="p num">16 €</span></div>
-        <div class="plato"><span class="n">Lubina a la espalda</span><span class="puntos"></span><span class="p num">16 €</span></div>
-        <div class="plato"><span class="n">Trucha de la sierra al estilo serrano</span><span class="puntos"></span><span class="p num">13 €</span></div>
+      <div class="grupo">
+        <h3>Pescados</h3>
+        <div class="it"><span class="n">Tartar de trucha con aliño de cítricos y salsa de soja</span><span class="g"></span><span class="p num">22 €</span></div>
+        <div class="it"><span class="n">Bacalao confitado al ajillo</span><span class="g"></span><span class="p num">20 €</span></div>
+        <div class="it"><span class="n">Trucha ahumada con bacon y patatas a lo pobre</span><span class="g"></span><span class="p num">16 €</span></div>
+        <div class="it"><span class="n">Lubina a la espalda</span><span class="g"></span><span class="p num">16 €</span></div>
+        <div class="it"><span class="n">Trucha de la sierra al estilo serrano</span><span class="g"></span><span class="p num">13 €</span></div>
       </div>
 
-      <div class="bloque">
-        <h3>Sugerencias del chef</h3>
-        <div class="plato"><span class="n">Tabla de jamón ibérico de cebo cortado a cuchillo</span><span class="puntos"></span><span class="p num">25 €</span></div>
-        <div class="plato"><span class="n">Pulpo a la brasa con Rin-Rán serrano</span><span class="puntos"></span><span class="p num">20 €</span></div>
-        <div class="plato"><span class="n">Queso de cabra a la plancha<i>Cebolla confitada y miel de romero</i></span><span class="puntos"></span><span class="p num">15 €</span></div>
-        <div class="plato"><span class="n">Paté de perdiz roja en espejo de royal y confitura de tomate</span><span class="puntos"></span><span class="p num">14 €</span></div>
-        <div class="plato"><span class="n">Rin-Rán<i>Plato típico de la zona</i></span><span class="puntos"></span><span class="p num">11 €</span></div>
+      <div class="grupo">
+        <h3>Sugerencias</h3>
+        <div class="it"><span class="n">Tabla de jamón ibérico de cebo cortado a cuchillo</span><span class="g"></span><span class="p num">25 €</span></div>
+        <div class="it"><span class="n">Pulpo a la brasa con Rin-Rán serrano</span><span class="g"></span><span class="p num">20 €</span></div>
+        <div class="it"><span class="n">Queso de cabra a la plancha<i>Cebolla confitada y miel de romero</i></span><span class="g"></span><span class="p num">15 €</span></div>
+        <div class="it"><span class="n">Paté de perdiz roja en espejo de royal y confitura de tomate</span><span class="g"></span><span class="p num">14 €</span></div>
+        <div class="it"><span class="n">Rin-Rán<i>Plato típico de la zona</i></span><span class="g"></span><span class="p num">11 €</span></div>
       </div>
 
-      <div class="bloque">
+      <div class="grupo">
         <h3>Carnes tradicionales</h3>
-        <div class="plato"><span class="n">Chuletillas de cordero serrano a la brasa</span><span class="puntos"></span><span class="p num">22 €</span></div>
-        <div class="plato"><span class="n">Lomo de orza con salsa de perdiz escabechada</span><span class="puntos"></span><span class="p num">16 €</span></div>
-        <div class="plato"><span class="n">Solomillo de cerdo al estilo mesón<i>En salsa pimienta verde, al ajillo o a la brasa</i></span><span class="puntos"></span><span class="p num">15 €</span></div>
-        <div class="plato"><span class="n">Lomo de orza con patatas a lo pobre</span><span class="puntos"></span><span class="p num">15 €</span></div>
+        <div class="it"><span class="n">Chuletillas de cordero serrano a la brasa</span><span class="g"></span><span class="p num">22 €</span></div>
+        <div class="it"><span class="n">Lomo de orza con salsa de perdiz escabechada</span><span class="g"></span><span class="p num">16 €</span></div>
+        <div class="it"><span class="n">Solomillo de cerdo al estilo mesón<i>En salsa pimienta verde, al ajillo o a la brasa</i></span><span class="g"></span><span class="p num">15 €</span></div>
+        <div class="it"><span class="n">Lomo de orza con patatas a lo pobre</span><span class="g"></span><span class="p num">15 €</span></div>
       </div>
-
     </div>
 
-    <div class="carta-nota">
+    <div class="grupos-menu">
       <p>Menú para grupos: entremeses de la casa, primero y segundo a elegir, postre o café y bebida. No se comparte entre comensales.</p>
-      <div class="menu-g"><b class="num">25 €</b><span>por persona</span></div>
+      <b class="num">25 €<span>por persona</span></b>
     </div>
-
-    <div class="mosaico">
-      <figure class="pieza m1">
-        <img src="img/huevos-cazorlena.jpg" width="1200" height="841" alt="Huevos a la cazorleña con lascas de jamón ibérico" loading="lazy">
-        <figcaption><span class="t">Huevos a la cazorleña<i>En cazuela de barro</i></span><span class="v num">12 €</span></figcaption>
-      </figure>
-      <figure class="pieza m2">
-        <img src="img/ensalada-perdiz.jpg" width="1100" height="1100" alt="Ensalada de perdiz roja servida en el comedor, con el aceite de oliva de Cazorla en la mesa" loading="lazy">
-        <figcaption><span class="t">Ensalada de perdiz roja<i>Con naranja</i></span><span class="v num">16 €</span></figcaption>
-      </figure>
-      <figure class="pieza m3">
-        <span class="marca">Foto ilustrativa</span>
-        <img src="img/solomillo-ilustrativo.jpg" width="800" height="600" alt="Solomillo a la brasa — fotografía ilustrativa, no tomada en el Mesón Don Chema" loading="lazy">
-        <figcaption><span class="t">Solomillo de ciervo o jabalí<i>A la brasa, al tomillo</i></span><span class="v num">25 €</span></figcaption>
-      </figure>
-      <figure class="pieza m4">
-        <span class="marca">Foto ilustrativa</span>
-        <img src="img/trucha-ilustrativa.jpg" width="840" height="560" alt="Trucha a la plancha con limón — fotografía ilustrativa, no tomada en el Mesón Don Chema" loading="lazy">
-        <figcaption><span class="t">Trucha de la sierra<i>Al estilo serrano</i></span><span class="v num">13 €</span></figcaption>
-      </figure>
-    </div>
-    <p class="pie-mosaico">Las fotografías de solomillo y trucha son ilustrativas; las otras dos están tomadas en el mesón.</p>
   </div>
 </section>
 
-<section class="resenas" id="opiniones">
-  <div class="wrap">
-    <div class="res-top">
-      <span class="big num">4,6</span>
-      <span class="meta">2.669 reseñas en Google<br>4,5 en TripAdvisor</span>
+<section class="esp">
+  <div class="wrap esp-cab">
+    <span class="rubro rubro-inv">Especialidades</span>
+    <h2 class="serif">De la carta</h2>
+  </div>
+
+  <div class="banda">
+    <div class="ph">
+      <span class="ilus">Foto ilustrativa</span>
+      <img src="img/solomillo-ilustrativo.jpg" width="800" height="600" alt="Solomillo a la brasa — fotografía ilustrativa, no tomada en el Mesón Don Chema" loading="lazy">
     </div>
-    <div class="res-lista">
+    <div class="tx">
+      <p class="prod serif">Ciervo</p>
+      <p class="plato">Solomillo de ciervo o jabalí a la brasa al tomillo</p>
+      <p class="precio serif num">25 €</p>
+    </div>
+  </div>
+
+  <div class="banda">
+    <div class="ph">
+      <img src="img/ensalada-perdiz.jpg" width="1100" height="1100" alt="Ensalada de perdiz roja servida en el comedor, con el aceite de oliva de Cazorla en la mesa" loading="lazy">
+    </div>
+    <div class="tx">
+      <p class="prod serif">Perdiz</p>
+      <p class="plato">Ensalada de perdiz roja y naranja<i>Mezclum, confitura de tomate, piquillo, perdiz escabechada</i></p>
+      <p class="precio serif num">16 €</p>
+    </div>
+  </div>
+
+  <div class="banda">
+    <div class="ph">
+      <img src="img/huevos-cazorlena.jpg" width="1200" height="841" alt="Huevos a la cazorleña con lascas de jamón ibérico" loading="lazy">
+    </div>
+    <div class="tx">
+      <p class="prod serif">Cazorleña</p>
+      <p class="plato">Huevos a la cazorleña<i>En cazuela de barro, con jamón, chorizo, verduras y patatas a lo pobre</i></p>
+      <p class="precio serif num">12 €</p>
+    </div>
+  </div>
+
+  <div class="banda">
+    <div class="ph">
+      <span class="ilus">Foto ilustrativa</span>
+      <img src="img/trucha-ilustrativa.jpg" width="840" height="560" alt="Trucha a la plancha con limón — fotografía ilustrativa, no tomada en el Mesón Don Chema" loading="lazy">
+    </div>
+    <div class="tx">
+      <p class="prod serif">Trucha</p>
+      <p class="plato">Trucha de la sierra al estilo serrano</p>
+      <p class="precio serif num">13 €</p>
+    </div>
+  </div>
+
+  <div class="wrap esp-pie">Las fotografías de solomillo y trucha son ilustrativas; las otras dos están tomadas en el mesón.</div>
+</section>
+
+<section class="local" id="local">
+  <div class="local-ph">
+    <img src="img/fachada-noche.jpg" width="335" height="597" alt="Rótulo amarillo del Restaurante Mesón Don Chema sobre la calle peatonal de Cazorla" loading="lazy">
+  </div>
+  <div class="local-tx">
+    <span class="rubro">El local</span>
+    <h2 class="serif">Calle peatonal, bajando del mercado</h2>
+    <p class="local-dir serif">Escaleras del Mercado, 2<span>Cazorla · Jaén</span></p>
+  </div>
+</section>
+
+<section class="res">
+  <div class="wrap">
+    <h2 class="sr">Opiniones</h2>
+    <div class="res-cifras">
+      <div><b class="num">4,6</b><span>2.669 reseñas en Google</span></div>
+      <div><b class="num">4,5</b><span>Tripadvisor</span></div>
+    </div>
+    <div class="res-cit">
       <div>
-        <p class="res-1 serif">“Singular Mesón en el centro de Cazorla.”</p>
-        <p class="res-firma">Andrés Del Moral · Google · 5 estrellas</p>
+        <p class="cit-a serif">“Singular Mesón en el centro de Cazorla.”</p>
+        <p class="firma">Andrés Del Moral · Google</p>
       </div>
       <div>
-        <p class="res-2">“El solomillo de ciervo, muuyyyy tierno, espectacular.”</p>
-        <p class="res-firma">Reseña en Google</p>
-        <p class="res-2">“Mejor restaurante de Cazorla. Calidad-precio.”</p>
-        <p class="res-firma">Título de una reseña en TripAdvisor</p>
+        <p class="cit-b">“El solomillo de ciervo, muuyyyy tierno, espectacular.”</p>
+        <p class="firma">Google</p>
+        <p class="cit-b">“Mejor restaurante de Cazorla. Calidad-precio.”</p>
+        <p class="firma">Tripadvisor</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="ubi" id="ubicacion">
-  <div class="wrap ubi-grid">
+  <div class="wrap ubi-g">
     <div>
-      <span class="label">Dónde estamos</span>
-      <p class="dir serif">Escaleras del Mercado, 2</p>
-      <p class="dir-2">23470 Cazorla, Jaén. Se baja desde la Calle Doctor Muñoz.</p>
+      <h2 class="rubro">Cómo llegar</h2>
+      <p class="ubi-dir serif">Escaleras del Mercado, 2<span>23470 Cazorla, Jaén</span></p>
       <button class="copiar" id="copiar" type="button">Copiar dirección</button>
 
       <table class="horas">
@@ -535,13 +483,13 @@ footer{background:var(--ink);color:var(--paper);}
       </table>
 
       <div class="coche">
-        <span class="label">Aparcamiento</span>
+        <h3 class="rubro">Aparcamiento</h3>
         <p>La calle es peatonal. Lo más cercano es el aparcamiento junto a la Plaza del Mercado; si está lleno, hay otro gratuito bajo el Balcón del Pintor Zabaleta.</p>
       </div>
 
       <div class="ubi-acc">
-        <a class="btn btn-dark" href="tel:+34953710529">Llamar · 953 71 05 29</a>
-        <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&destination=Mes%C3%B3n%20Don%20Chema%2C%20Escaleras%20del%20Mercado%202%2C%2023470%20Cazorla%2C%20Ja%C3%A9n" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn-ink" href="tel:+34953710529">Llamar</a>
+        <a class="btn btn-ln" href="https://www.google.com/maps/dir/?api=1&destination=Mes%C3%B3n%20Don%20Chema%2C%20Escaleras%20del%20Mercado%202%2C%2023470%20Cazorla%2C%20Ja%C3%A9n" target="_blank" rel="noopener">Ver en Google Maps</a>
       </div>
     </div>
     <div class="mapa">
@@ -550,35 +498,44 @@ footer{background:var(--ink);color:var(--paper);}
   </div>
 </section>
 
+<section class="reserva">
+  <div class="wrap reserva-in">
+    <div>
+      <h2 class="rubro">Reservas</h2>
+      <a class="tel serif num" href="tel:+34953710529">953 71 05 29</a>
+    </div>
+    <a class="btn btn-ink" href="tel:+34953710529">Llamar y reservar</a>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <div class="wrap pie">
+    <div class="pie-n serif">Mesón<br><em>Don Chema</em></div>
     <div>
-      <div class="pie-n serif">Mesón<br><em>Don Chema</em></div>
+      <h3>Dirección</h3>
+      <p>Escaleras del Mercado, 2</p>
+      <p>23470 Cazorla, Jaén</p>
     </div>
     <div>
-      <h4>Reservas</h4>
+      <h3>Horario</h3>
+      <p class="num">13:00–17:00</p>
+      <p>Jueves cerrado</p>
+    </div>
+    <div>
+      <h3>Contacto</h3>
       <a class="num" href="tel:+34953710529">953 71 05 29</a>
       <a href="https://www.instagram.com/mesondonchema/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/mesondonchema.restaurante/" target="_blank" rel="noopener">Facebook</a>
     </div>
-    <div>
-      <h4>Dirección</h4>
-      <p>Escaleras del Mercado, 2</p>
-      <p>23470 Cazorla, Jaén</p>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Mes%C3%B3n%20Don%20Chema%2C%20Escaleras%20del%20Mercado%202%2C%2023470%20Cazorla%2C%20Ja%C3%A9n" target="_blank" rel="noopener">Cómo llegar →</a>
-    </div>
   </div>
-  <div class="wrap pie-bajo">
-    <span>© Mesón Don Chema · Cazorla</span>
-    <span>13:00–17:00 · Jueves cerrado</span>
-  </div>
+  <div class="wrap pie-b">© Mesón Don Chema · Cazorla</div>
 </footer>
 
 <nav class="movil" aria-label="Contacto rápido">
-  <a class="m1" href="https://www.google.com/maps/dir/?api=1&destination=Mes%C3%B3n%20Don%20Chema%2C%20Escaleras%20del%20Mercado%202%2C%2023470%20Cazorla%2C%20Ja%C3%A9n" target="_blank" rel="noopener">Llegar</a>
-  <a class="m2" href="tel:+34953710529">Reservar mesa</a>
+  <a class="a1" href="https://www.google.com/maps/dir/?api=1&destination=Mes%C3%B3n%20Don%20Chema%2C%20Escaleras%20del%20Mercado%202%2C%2023470%20Cazorla%2C%20Ja%C3%A9n" target="_blank" rel="noopener">Llegar</a>
+  <a class="a2" href="tel:+34953710529">Reservar mesa</a>
 </nav>
 <span class="sr" id="aviso" role="status" aria-live="polite"></span>
 
@@ -592,7 +549,6 @@ footer{background:var(--ink);color:var(--paper);}
   d.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click',function(){d.classList.remove('on');b.setAttribute('aria-expanded','false');});
   });
-
   var c=document.getElementById('copiar'),av=document.getElementById('aviso');
   c.addEventListener('click',function(){
     var t='Escaleras del Mercado, 2, 23470 Cazorla, Jaén';
